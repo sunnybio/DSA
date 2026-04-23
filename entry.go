@@ -2,11 +2,11 @@ package main
 
 import (
 	"fmt"
-	"source_code/array"
+	"source_code/neetcode"
 )
 
 func main() {
 
-	r := array.TopKFrequent([]int{1, 1, 1, 2, 2, 3}, 2)
+	r := neetcode.ThreeSum([]int{-1, 0, 1, 2, -1, -4})
 	fmt.Println(r)
 }
