@@ -7,6 +7,6 @@ import (
 
 func main() {
 
-	r := neetcode.ThreeSum([]int{-1, 0, 1, 2, -1, -4})
+	r := neetcode.EvalRPN([]string{"10", "6", "9", "3", "+", "-11", "*", "/", "*", "17", "+", "5", "+"})
 	fmt.Println(r)
 }

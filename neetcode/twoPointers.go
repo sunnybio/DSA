@@ -131,3 +131,7 @@ func ThreeSum(nums []int) [][]int {
 	return result
 
 }
+func MaxArea(height []int) int {
+
+	return 1
+}
