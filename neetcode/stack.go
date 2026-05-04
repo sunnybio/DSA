@@ -165,3 +165,21 @@ func EvalRPN(tokens []string) int {
 	result, _ := strconv.Atoi(r)
 	return result
 }
+func DailyTemperatures(temperatures []int) []int {
+	var results []int
+	results = make([]int, len(temperatures))
+	tempStack := []int{}
+
+	for i := 0; i < len(temperatures); i++ {
+		fmt.Println(i)
+		for len(tempStack) > 0 && temperatures[i] > temperatures[tempStack[len(tempStack)-1]] {
+
+			results[tempStack[len(tempStack)-1]] = i - tempStack[len(tempStack)-1]
+			tempStack = tempStack[:len(tempStack)-1]
+		}
+		tempStack = append(tempStack, i)
+
+	}
+	return results
+
+}

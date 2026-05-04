@@ -7,6 +7,6 @@ import (
 
 func main() {
 
-	r := neetcode.EvalRPN([]string{"10", "6", "9", "3", "+", "-11", "*", "/", "*", "17", "+", "5", "+"})
+	r := neetcode.LengthOfLongestSubstring("abcabcbb")
 	fmt.Println(r)
 }
